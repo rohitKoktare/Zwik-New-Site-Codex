@@ -1,0 +1,25 @@
+:root {
+  --background: 40 45% 97%;
+  --foreground: 24 16% 16%;
+  --card: 0 0% 100%;
+  --card-foreground: 24 16% 16%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 24 16% 16%;
+  --primary: 26 52% 27%;
+  --primary-foreground: 36 57% 97%;
+  --secondary: 35 43% 90%;
+  --secondary-foreground: 24 16% 16%;
+  --muted: 36 33% 93%;
+  --muted-foreground: 24 10% 40%;
+  --accent: 14 39% 88%;
+  --accent-foreground: 24 16% 16%;
+  --border: 28 24% 84%;
+  --input: 28 24% 84%;
+  --ring: 26 52% 27%;
+  --radius: 1.25rem;
+  --brand-cream: #f7f1e8;
+  --brand-sand: #eadfce;
+  --brand-blush: #e7d5cb;
+  --brand-moss: #57674d;
+  --brand-ink: #302924;
+}

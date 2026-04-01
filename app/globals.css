@@ -1,0 +1,84 @@
+@import "../styles/theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #E8CFCF;
+    --color-primary-dark: #D6AFAF;
+    --color-accent: #C75C5C;
+    --color-bg: #FAF7F5;
+    --color-surface: #F3EDEB;
+    --color-text: #1A1A1A;
+    --color-text-secondary: #6B6B6B;
+    --color-gold-accent: #C8A96A;
+    --color-border: #E7D9D6;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-textPrimary antialiased;
+    background-image:
+      radial-gradient(circle at top, rgba(255, 255, 255, 0.92), transparent 34%),
+      linear-gradient(180deg, #fdf9f8 0%, var(--color-bg) 42%, #f8f1ef 100%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-textPrimary tracking-tight text-balance;
+  }
+
+  p {
+    @apply text-pretty leading-8;
+  }
+}
+
+@layer components {
+  .surface-panel {
+    @apply rounded-[28px] border border-border bg-white/80 shadow-surface backdrop-blur-sm;
+  }
+
+  .section-shell {
+    @apply rounded-[32px];
+    background-color: rgb(243 237 235 / 0.8);
+  }
+
+  .section-title {
+    @apply text-4xl font-semibold leading-[1.05] md:text-5xl lg:text-6xl;
+  }
+
+  .section-copy {
+    @apply max-w-2xl text-base leading-8 text-textSecondary;
+  }
+
+  .eyebrow {
+    @apply inline-flex rounded-full border border-border bg-white/75 px-4 py-1 text-xs font-medium uppercase tracking-[0.24em] text-textSecondary;
+  }
+
+  .cta-accent {
+    @apply bg-accent text-[var(--color-accent-foreground,#FFF8F6)] shadow-romantic transition-all duration-300 hover:bg-[#b75050] hover:-translate-y-0.5;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
