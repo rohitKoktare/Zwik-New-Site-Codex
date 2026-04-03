@@ -47,8 +47,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
-      <body className="min-h-screen font-[family-name:var(--font-body)]">
+    <html
+      lang="en"
+      className={`${inter.variable} ${poppins.variable}`}
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
+    >
+      <body
+        className="min-h-screen font-[family-name:var(--font-body)]"
+        suppressHydrationWarning
+      >
         <div className="relative isolate overflow-hidden">
           <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[32rem] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.9),_transparent_55%)]" />
           <Navbar />

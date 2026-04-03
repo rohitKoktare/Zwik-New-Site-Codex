@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/products/aura-clip-diffuser":{},"/products/lune-gift-set":{},"/products/halo-desk-totem":{}},"dynamicRoutes":{"/products/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/products/[slug]","routeRegex":"^\\/products\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"ea4885293023bdb60925ec82e7939c68","previewModeSigningKey":"39bff4fb545a4e24f487cfc55a95c9104b111403b1e2e3bba35c4e6f5f5ddd08","previewModeEncryptionKey":"34282f0b1675364926a81d64cdcce8957124663caf984b8ec8d252181b5c79d9"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "262bf8fd64853df8237db8cbff18cdc2",
+    "previewModeSigningKey": "725e97cd0539c8b5f81d60730abf2631243ce393955563b17884379bac05d15b",
+    "previewModeEncryptionKey": "a831a40ea7e5412da01c8d142db0b52239af29ff9ddeb1ca303a11d9cf5ee661"
+  }
+}
